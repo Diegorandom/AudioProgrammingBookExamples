@@ -10,8 +10,6 @@ int main()
     double frequency; /* freq we want to find */
     int midinote;     /* given this note */
 
-    /* calculate required numbers */
-
     semitone_ratio = pow(2, 1 / 12.0); /* approx. 1.0594631*/
     /* find Middle C, 3 semitones above A = 220 */
     c5 = 220.0 * pow(semitone_ratio, 3);
