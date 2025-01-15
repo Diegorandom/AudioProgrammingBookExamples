@@ -12,7 +12,7 @@ int main()
     for (int i = 1; i <= 12; i++)
     {
         float string_length = c4_string_length / pow(semitone_ratio, i);
-        printf("the string length (cm) for needed for a the midinote %d is %f", c4_midinote + i, string_length);
+        printf("the string length (cm) for needed for midinote %d is %f", c4_midinote + i, string_length);
         printf("\n");
     }
 }
