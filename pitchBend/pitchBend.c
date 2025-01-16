@@ -25,7 +25,7 @@ int main()
        log_a(N) = log_b(N) / log_b(a)
            to find the log of a value to base 'semitone_ratio'.
     */
-    frequency = 400.0;
+    frequency = 439.0;
     fracmidi = log(frequency / c0) / log(semitone_ratio);
     /* round fracmidi to the nearest whole number */
     midinote = (int)(fracmidi + 0.5);
@@ -34,7 +34,7 @@ int main()
 
     printf("The nearest MIDI note to the frequency %f is %d\n", frequency,
            midinote);
-    printf("pitchbend = %f%%\n", pitchBend);
+    printf("pitchbend = %d%%\n", (int)round(pitchBend));
 
     return 0;
 }
