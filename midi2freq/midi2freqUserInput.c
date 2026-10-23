@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
-#include <cctype>
+#include <ctype.h>
 
 int main()
 {
@@ -21,7 +21,7 @@ int main()
             printf("The MIDI note is a float \n");
             return 1;
         }
-        if (!std::isdigit(message[i]))
+        if (!isdigit(message[i]))
         {
             printf("There is an invalid number: %s \n", &message[i]);
             return 1;
